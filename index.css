@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    
+}
+
+
+header{
+   
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -50px;
+    
+   
+
+}
+
+
+.mydiv{
+    display: flex;
+    padding: 5px ;
+    margin: 0 auto;
+   
+}
+ 
+
+header nav div a{
+    font-size: 17px;
+    color: #a3ffcc;
+    text-decoration: none;
+    margin-right: 24px;
+    text-transform: uppercase;
+    transition: all .3s ;
+    
+    animation: flipInX;
+    animation-duration: 2s;
+}
+
+
+ header nav div a:hover{
+    color: cornsilk;
+    background-color: rgb(1, 187, 168);
+   
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align{
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    padding: 10px;
+}
+.mylogo{
+    margin-right: 60px ;
+    margin-left: 5px;
+    animation: flipInX;
+    animation-duration: 1s;
+}
+.mylogo h3{
+    color: white;
+    display: inline;
+    padding: 5px;
+    font-size:30px;
+    font-weight: 200;
+   
+}
+.mylogo h6{
+    color: white;
+    
+}
+.bt {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px 0 turquoise;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s;
+    margin-left: 50px;
+    color: turquoise;
+    padding-left:-100px;
+    border-color: turquoise;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.bt1{
+    background-color:  transparent;
+    text-transform: uppercase;
+    margin-left: 340px;  
+}
+ .bt1:hover{
+    background: darkturquoise;
+    color: white ;
+    border-color: darkturquoise;
+   box-shadow: 1px 0px 3px darkturquoise;
+}
+header .mydiv {
+    background-color: black;
+
+    margin: initial;
+   
+}
+  
+ 
+
+
+
+.hello{
+    padding: 50px 0;
+    animation: bounceInLeft;
+    animation-duration: 1s;
+    
+}
+.hello img{
+   
+   margin-left:110px ;
+   border-radius: 10px;
+   margin-bottom: 90px;
+   box-shadow: 5px 3px 20px black;
+   margin-top: 40px;
+  
+  
+}
+
+
+.hello img:hover{
+    box-shadow: 3px 2px 15px white;
+}
+.hello .right{
+    color: white;
+    margin-left: 60px;
+}
+.hello .right h3{
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 5px;
+    text-shadow: 1px 0 3px black; 
+    
+}
+.hello .right h1{
+    color: #f0feff;
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    text-shadow: 1.6px 1.2px 4px black;   
+}
+.hello .right p{
+    line-height: 6px;
+    margin-bottom: 20px;
+}
+.hello .right h6{
+    font-size: 18px;
+    color: #507590;
+    text-shadow: 1px 0 4px  white;
+    margin-left: 2px;
+}
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s;
+   
+}
+.bt2{
+    background-color: black ;
+    color: lightgoldenrodyellow ;
+    
+}
+.bt2:hover{
+
+    background-color: mediumturquoise;
+    color: white;
+    box-shadow: 3px 4px 5px black;
+}
+
+.flex{
+    justify-content: center;
+
+}
+.hello .right{
+    margin-top: -10px;
+}
+section.about .container{
+    padding: 80px ;
+    
+    display: flex;
+    margin: 40px;
+    margin-left: -80px;
+    margin-right: 20px;
+
+}
+section.about {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -60px;
+
+}
+
+ .about .container .right img{
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 1px 3px 6px black;
+    animation: pulse;
+    animation-duration: 2s;
+
+
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 0.6rem;
+}
+section.about .social a:hover{
+    background-color: none;
+    transition: all .3s ease;
+    transform: scale(2);
+    margin-top: 0.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  
+}
+
+
+section.about .container .left h1{
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: 80;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: 1 ;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+     position: relative;
+}
+
+@keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+
+
+section .left h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-shadow: 1px 0px 2px rgb(95, 176, 179);
+    
+    
+    
+}
+
+section .left p{
+    padding-top: 1rem;
+    line-height: 1.7rem;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 570;
+    font-size: 17px;
+}
+
+
+section .left{
+ padding: 20px;
+ margin-right: 95px;
+ margin-left: 70px;
+}
+
+
+section .heading{
+    color: whitesmoke;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 58px;
+    line-height: 0.5;
+ 
+}
+    
+section .heading +p{
+    text-align: center;
+    margin-bottom: 15rem;
+}  
+section.skill {
+
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -2px;
+}
+section.skill .container{
+ 
+    padding: 15rem;
+    padding-top: 3.5rem;
+    margin-top: 53px;
+ 
+   
+   
+}
+section.skill .container .heading{
+
+    color: rgb(22, 13, 13);
+    font-family: 'Castoro', serif;
+    text-shadow: 2.7px 1px 3.2px black;
+    letter-spacing: 4.5px;
+    font-weight: 500;
+    padding-top: -10px;
+    
+}
+
+
+section.skill .card-wrapper{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-column-gap: 5rem;
+   grid-row-gap: 2rem;
+   margin-top: -100px;
+  
+}
+
+section.skill .card-wrapper .card{
+    background-color: white;
+    padding: 3rem 2rem;
+    position: relative; 
+    padding-top: 3rem;
+    text-align: center;
+    transition: all .3s ease;
+    box-shadow: 1px 2px 10px black;
+}
+
+section.skill .card-wrapper .card img{
+    background-color: turquoise;
+    padding: 10px;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%)
+   
+}
+
+section.skill .card-wrapper .card h2{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.3rem;
+    font-family: 'Volkhov', serif;
+}
+
+
+section.skill .card-wrapper .card p{
+
+    font-family: 'Gentium Basic', serif;
+    font-weight: 560;
+    color:#3d6084 ;
+    line-height: 1.7;
+    padding: 1rem;
+}
+
+section.skill .card-wrapper .card:hover{
+    background-color:black ;
+}
+section.skill .card-wrapper .card:hover h2,section.skill .card-wrapper .card:hover p{
+    color: white ;
+}
+
+section.education{
+   background-color: white;
+   background-image: url('./images/bg.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+  
+   
+}
+
+section.education .heading{
+    font-weight: 380;
+    font-family: 'DM Serif Text', serif;
+    color: black;
+    padding: 2.5rem;
+    padding-bottom: 0;
+    letter-spacing: 0.2rem;
+    text-shadow: 2.7px 1px 3.2px black;
+}
+section.education .card-wrapper{
+    display: grid; 
+    grid-template-columns: repeat(2,1fr) ;
+    grid-column-gap: 1rem;
+    padding-right: 8rem;
+    padding-left: 3.5rem;
+
+}
+section.education .card-wrapper .card{
+    background-color: whitesmoke ;
+    margin: 145px;
+   margin-top: 60px;
+   
+   justify-content: space-between;
+   box-shadow: 1px 2px 5px black;
+}
+
+section.education .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.education .card-wrapper .card .card-content h1{
+    font-size: 1.2rem;
+    font-weight: 590;
+    word-spacing: 2px;
+    font-family: 'Merriweather', serif;
+}
+section.education .card-wrapper .card .card-content a{
+    color: black;
+    text-decoration: none;
+}
+section.education .card-wrapper .card .card-content span{
+    color:#9888bf ;
+    font-size: 11px;
+    word-spacing: 2px;
+}
+section.education .card-wrapper .card .card-content p{
+    font-family: 'Gentium Basic', serif;
+    font-weight: 580;
+    color:#0a1521 ;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    word-spacing: 2px;
+}
+section.education .card-wrapper .card .card-content a:hover{
+    color: darkturquoise;
+}
+
+section.education .card-wrapper .card .img-wrapper img{
+  object-fit: cover;
+    
+}
+
+
+section.resume .left .heading h1{
+    padding: 3rem;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: -2.5rem;
+    color: black;
+    font-size: 58px;
+    font-family: 'PT Serif', serif;
+    animation: none;
+    text-shadow: 1px 1px 3.5px black; 
+    letter-spacing: 0.2rem;
+    
+}
+
+section.resume .left .profile,section.resume .left .objective,section.resume .left .ed,section.resume .left .sk{
+    margin-right: 50px;
+    margin-left: 0.3rem;
+    padding-bottom:0.5rem;
+   
+
+}
+
+section.resume{
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -5px;
+   
+}
+
+section.resume .left .profile h3,section.resume .left .objective h3,section.resume .left .ed h3{
+    font-size: 28px;
+    margin-top: -10px;
+    margin-bottom: -0.5rem;
+    font-family: 'Alike', serif;
+
+}
+section.resume .left .profile p,section.resume .left .objective p{
+    
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0.3rem;
+    
+}
+section.resume .left .ed p{
+   
+    line-height: 1.4rem;
+    padding-right: 0.9rem;
+
+}
+section.resume .left .sk h3{
+    padding-bottom: 0.2rem;
+    font-family: 'Alike', serif;
+} 
+section.resume .left .sk ul li{
+    margin-left: 20px;
+    padding-bottom: 0.5rem ;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 570;
+    font-size: 17px;
+}
+
+section.resume .right img{
+    margin-right: 3rem;
+    margin-left: -4rem;
+}
+section.resume .left .sk h3{
+    padding-bottom:0.3rem;
+    font-size: 28px;
+    margin-bottom: 0.3rem; 
+
+}
+section.contact{
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -43.8px;
+}
+section.contact .heading{
+  
+    font-family: 'Lato', sans-serif;
+    color:black;
+    padding: 0.7rem;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+    text-shadow: 2.7px 1px 3.2px black;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1.5rem;
+}
+
+section.contact .card-wrapper{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+section.contact .card-wrapper img{
+    margin-bottom: 0.8rem;
+}
+
+section.contact .card-wrapper h1{
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+section.contact .card-wrapper h6 a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: lightslategrey;
+}
+section.contact .card-wrapper h6 a:hover{
+    color:turquoise  ;
+  
+    
+}
+section.contact .input{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 0.5rem;
+   padding: 1rem;
+   padding-left:  3rem;
+   padding-right: 3rem ;
+   font-size: 1rem;
+
+}
+section.contact .input input{
+    padding: 0.2rem;
+    padding-left: 0.4rem;
+    padding-top: 0.3rem;
+    border: 1px solid lightslategrey;
+    font-size: 0.9rem;
+    
+}
+section.contact .input1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left:  3rem;
+   padding-right: 3rem ;
+    
+}
+section.contact .input1 input{
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+    padding-left: 0.4rem;
+    border: 1px solid lightslategrey;
+    font-size: 0.9rem;
+   
+}
+
+section.contact .input1 textarea {
+    
+    padding: 0.5rem;
+    border: 1px solid lightslategrey;
+    font-size: 1rem;
+    font-weight: 2px;
+}
+section.contact input:focus,section.contact .input1 textarea:focus{
+    outline: none;
+}
+
+section.contact .container .msg .btn{
+    margin-left: 600px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+}
+
+footer .socials a{
+    margin-right: 1rem;
+}
+
+footer .designer{
+    color: rgba(236, 230, 230, 0.836);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-shadow: 2px 2.5px 8px black;
+    margin-right: 11px;
+}
+footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.8rem;
+    padding: 1.4rem;
+    margin-bottom: 0.2rem;
+    color: cornsilk;
+    margin-right: 1.5rem;
+}
+footer .logo h3{
+    text-shadow: 1px 2px 7px black;
+}
+
+
+
+
+ 
