@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color:rgb(188, 142, 142)
+}
+
+a, .btn{
+    transition: all 300s ease;
+}
+#home{
+    margin: 0;
+}
+/* NAVBAR */
+nav, .nav-links{
+    display:flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items:center;
+    height: 16vh;
+}
+
+.nav-links{
+    gap:2rem;
+    list-style:none;
+    font-size:1.5rem;
+    font-weight: bold;
+   
+}
+
+#home-nav a{
+    color: rgb(57, 5, 5);
+    text-decoration: none;
+}
+
+#home-nav a:hover{
+    color:rgb(149, 0, 0);
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: rgb(195, 107, 107);
+}
+
+.logo{
+    font-size:2rem;
+    color: rgb(57, 5, 5);
+    margin-right:5rem;
+    font-family: 'Protest Strike', sans-serif;
+   
+}
+
+.logo:hover{
+    cursor:default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+    display:none;
+}
+
+.hamburger-menu{
+    position:relative;
+    display:inline-block;
+    z-index: 99;
+}
+
+.hamburger-icon{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:24px;
+    width:30px;
+    cursor:pointer;
+}
+
+.hamburger-icon span{
+    width:100%;
+    height:2px;
+    background-color:rgb(54, 1, 1);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position:absolute;
+    font-weight: bold;
+    top:100%;
+    right:0;
+    background-image: linear-gradient(120deg, #f8e9b3b6 0%,rgba(237, 168, 108, 0.758) 50%,#9f3e0e92 100%);
+    width:fit-content;
+    max-height:0;
+    overflow: hidden;
+    transition:all 0.3 ease-in-out;
+}
+
+
+
+.menu-links a{
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(57, 5, 5);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover{
+    color:rgb(166, 100, 100);
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: rgb(195, 107, 107);
+}
+
+.menu-links li{
+    list-style:none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity:0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:nth-child(2){
+    opacity:1;
+}
+.hamburger-icon span:last-child{
+    transform: none;
+}
+/* SECTIONS */
+
+section{
+    padding-top:4vh;
+    height:96vh;
+    margin:0 10rem; /*top and bottom=0; left and right=10rem; */
+    box-sizing:border-box;
+    min-height:fit-content;
+}
+
+
+/* PROFILE SECTION */
+
+
+#profile{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:15rem;
+    height:80vh;
+}
+
+.profile-text{
+    align-self:center;
+    text-align: center;
+    
+
+}
+.profile-pic img{
+    display:flex;
+    height: 378px;
+    width: 350px;
+    border-radius:70%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.507);
+    margin:auto 0;
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+  }
+
+.profile-text p{
+    font-weight:500px;
+    text-align: center; 
+}
+
+.profile-text-p1{
+    font-size:1.2rem;
+    text-align: center;
+    margin-bottom:0.1rem;
+    margin-top: 2rem;
+    color: brown;
+}
+.profile-text-p2{
+    margin-bottom:1rem;
+    font-size:1.7rem;
+    color: brown;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom:0.2rem;
+    color:rgb(57, 5, 5);
+    font-family: 'Prompt', sans-serif;
+}
+.word {
+    margin: auto;
+    color: rgb(97, 0, 0);
+    font: 500 normal 1.5em 'tahoma';
+    padding-bottom: 0.7rem;
+    
+  }
+
+.social-container{
+    display:flex;
+    justify-content:center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon{
+    cursor:pointer;
+    height:2rem;
+}
+
+.btn-container{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+}
+
+.btn{
+    font-weight: 800px;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width:8rem;
+    border-radius: 2rem;
+    background-color: brown;
+}
+
+.btn-color-1, .btn-color-2{
+    border: rgb(75, 11, 11) 0.1rem solid;
+}
+
+.btn-color-2:hover{
+    cursor:pointer;
+    background-color: rgb(75, 11, 11);
+    color: white;
+}
+
+.btn-color-1:hover{
+    background-color: rgb(75, 11, 11);
+    color:white;
+}
+.btn-color-1{
+    color: white ;
+    background-color: rgb(95, 12, 12);
+}
+
+.btn-color-2{
+    background:none;
+    color:rgb(66, 6, 6);
+
+}
+
+/* ABOUT ME */
+
+#about{
+   position:relative;  
+}
+.about-container{
+    display:flex;
+    gap:4rem;
+    height:80%;
+}
+
+.about-info-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.about-containers{
+    display: flex;
+    gap:2rem;
+    margin-bottom:2rem;
+}
+
+.arrow{
+    position:absolute;
+    right:-7rem;
+    bottom:2rem;
+}
+
+.info-container{
+    padding:1.5rem;
+    flex:1;
+    background: linear-gradient(90deg, rgb(61, 0, 0) 3%, rgb(109, 1, 1) 50%, rgba(71, 0, 0, 0.999) 100%);
+    border: rgb(192, 100, 100) 0.1rem solid;
+    text-align: center;
+    color:  rgb(183, 82, 82);
+    border-radius: 2rem;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.247);
+}
+.doc{
+    color:rgb(30, 1, 1);
+    text-underline-offset: 0.2rem;
+    font-weight:bold;
+}
+.doc:hover{
+    color: rgb(215, 164, 164);
+}
+
+.info-container h3{
+    color:rgb(24, 0, 0);
+    padding-bottom:1rem;
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.info-container p{
+    padding-bottom:0.3rem;
+}
+
+.text-container p{
+    color:rgb(42, 1, 1) ;
+    line-height: 1.5rem;
+    padding-top: 2rem;
+
+}
+
+/* SKILLS */
+
+#skills{
+    position: relative;
+}
+
+.skills-sub-title{
+    color: rgb(0, 0, 0);
+    font-weight:100;
+    font-size: 1.7rem;
+    margin-bottom:2rem;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+
+}
+
+.article-container{
+    display:flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+article{
+    display:flex;
+    justify-content: space-around;
+    gap:0.8rem;
+
+}
+
+article .icon{
+    cursor:default ;
+}
+
+#skills .title{
+   margin-bottom: 3rem;
+}
+
+/* PROJECTS */
+#projects{
+    position:relative
+}
+
+.project-img{
+    border-radius: 0.5rem;
+    width:290px;
+    height:200px;
+}
+
+.project-btn{
+    border-color:rgb(144, 55, 55);
+    color: white;
+}
+
+.project-title{
+    margin:1rem;
+}
+
+/* CONTACT */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 2rem;
+   
+}
+.color-text-p1{
+    color: rgb(125, 7, 7);
+}
+
+.contact-info-top-container{
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+    background: linear-gradient(90deg, rgb(61, 0, 0) 3%, rgb(109, 1, 1) 50%, rgba(71, 0, 0, 0.999) 100%);
+    border: rgb(192, 100, 100) 0.1rem solid;
+    color:  rgb(183, 82, 82);
+    border-radius: 2rem;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.337);
+    margin: 2rem auto;
+    gap:2rem;
+
+}
+
+.contact-info-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    margin: 1.5rem;
+}
+
+.contact-icon{
+    cursor:default;
+    height: 3rem;
+}
+
+.email-icon{
+    height:3.7rem;
+}
+
+/* FOOTER */
+footer{
+    max-height: 25vh;  
+    background: linear-gradient(90deg, rgba(24,0,11,1) 3%, rgba(122,21,21,1) 50%, rgba(64,0,0,1) 100%);
+
+}
+
+footer p{
+    padding: 0 2rem;
+    padding-top:2rem;
+    text-align: center;
+   
+}
+
+footer .social-icons{
+    padding-bottom: 2rem;
+  
+}
+
+
+
+  

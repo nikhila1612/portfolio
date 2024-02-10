@@ -1,0 +1,133 @@
+@media screen and (max-width:1400px) {
+    #profile{
+        height:83vh;
+        margin-bottom: 6rem;
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    #home-nav{
+        display:none;
+    }
+    #hamburger-nav{
+        display:flex;
+    }
+    #skills, .about-container{
+        margin-top:2rem;
+        margin-bottom:10rem; 
+    }
+    #profile, .about-container {
+        display:block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, .about-container{
+        height:fit-content;
+    }
+    section{
+        margin:0 5%;
+    }
+    .profile-pic img{
+        width:250px;
+        height:259px;
+        margin:0 auto 2rem;
+    }
+    .about-containers{
+        margin-top:0;
+    }
+    .color-container{
+        margin-bottom:2rem;
+    }
+  
+}
+
+@media screen and (max-width:600px) {
+    #contact,footer{
+        height:40vh
+    }
+    #profile{
+        height:83vh;
+        margin-bottom:0;
+    }
+    #skills{
+        margin: 2rem;
+    }
+    article{
+        font-size:1rem;
+    }
+    footer nav{
+        height:fit-content;
+        margin-bottom:1.5rem;
+
+    }
+    .about-containers, .contact-info-top-container,.btn-container{
+        flex-wrap: wrap;
+    }
+    #about .about-container{
+        margin-bottom: 0;
+    }
+    #skills .title{
+        margin-bottom: 0;
+    }
+    #skills{
+        margin-bottom: 0;
+    }
+    #projects .skills-container{
+        padding-top: 0;
+
+    }
+    #projects .about-container{
+        margin-bottom: 0;
+    }
+    .contact-info-container{
+        margin:0;
+    }
+    .contact-info-container p,
+    .nav-links li a{
+        font-size: 1rem;
+    }
+    .skills-sub-title{
+        font-size: 1.3rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap:0.5rem;
+        text-align: center;
+    }
+    .profile-pic img{
+        width:auto;
+        height: 38vh;
+        justify-content: center;
+    }
+    .title{
+        font-size: 1.9rem;
+    }
+    .profile-text-p1{
+        font-size:1rem;
+    }
+    .profile-text-p2{
+        font-size:1.5rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+    .color-container{
+        margin-bottom:2rem;
+    }
+    .contact-icon{
+        height:1.9rem;
+    }
+    .email-icon{
+        height:2.3rem;
+    }
+}

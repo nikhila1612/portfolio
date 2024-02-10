@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+<!----------------------------LANDING PAGE------------------------------>
+   <section id="home">
+        <nav id="home-nav">
+            <div class="logo">Nikhila M</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about" class="top-nav-links">About</a></li>
+                    <li><a href="#skills" class="top-nav-links">Skills</a></li>
+                    <li><a href="#projects"class="top-nav-links" >Projects</a></li>
+                    <li><a href="#contact"class="top-nav-links">Contact</a></li>               
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Nikhila M</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>            
+                </div>
+            
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>        
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="profile-pic">
+                <img src="./images/profile pic.jpg" alt="Nikhila M profile picture"/>
+            </div>
+            <div class="profile-text">
+                <p class="profile-text-p1">Hello I'm</p>
+                <h1 class="title">Nikhila M</h1>
+                <div class="word"></div>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+                </div>
+                <div class="social-container">
+                    <img src="./images/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/nikhila-m-a166ab214/'"/>
+                    <img src="./images/github.png" alt="linkedin" class="icon" onclick="location.href= 'https://github.com/nikhila1612'"/>
+                    <img src="./images/instagram.png" alt="linkedin" class="icon" onclick="location.href='https://www.instagram.com/nikhila1612/'"/>
+                    <img src="./images/twitterx.png" alt="linkedin" class="icon" onclick="location.href='https://twitter.com/NikhilaM1612'"/>
+                </div>
+        </section>
+    </section>
+<!------------------------------ABOUT ME------------------------------->
+    <section id="about">
+        <p class="profile-text-p1">Learn more</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-container">
+            <div class="about-info-container">
+                <div class="about-containers">
+                    <div class="info-container">
+                        <img src="./images/certifications.png" class="icon" alt="Certification icon"/>
+                        <h3>Certifications</h3>
+                        <p>Proficient understanding of diverse areas such as Python, Web Development, and more.</p>
+                        <a href="https://drive.google.com/drive/folders/18oVnlgCE--GecDymG8hTWYVTqnf367h5?usp=sharing" class="doc">Show more</a>
+                    </div>
+                    <div class="info-container">
+                        <img src="./images/education.png" class="icon" alt="Education icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech in Computer Science<br>& Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                    I am a dedicated web developer with a strong expertise in Python. I dedicate my days to continuous learning and creating new projects. Additionally, I have a keen interest in pursuing a career as a data scientist. Beyond my professional pursuits, I enjoy traveling, dancing, listening to music, and more.</p>
+                </div>
+            </div>
+        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+    </section>
+
+<!--------------------------------SKILLS------------------------------->
+    <section id="skills">
+        <p class="profile-text-p1">Explore my</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+                <div class="about-containers">
+                    <div class="info-container">
+                        <h2 class="skills-sub-title">Web Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./images/html.png" alt="html icon" class="icon">
+                                <div>
+                                    <h2>HTML</h2>
+                                    <p>Advance</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/css.png" alt="css icon" class="icon">
+                                <div>
+                                    <h2>CSS</h2>
+                                    <p>Advance</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/javascript.png" alt="javascript icon" class="icon">
+                                <div>
+                                    <h2>Javascript</h2>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/bootstrap.png" alt="bootstrap icon" class="icon">
+                                <div>
+                                    <h2>Bootstrap</h2>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/sql.png" alt="sql icon" class="icon">
+                                <div>
+                                    <h2>SQL</h2>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <h2 class="skills-sub-title">Programming Languages</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./images/python.png" alt="python icon" class="icon">
+                                <div>
+                                    <h2>Python</h2>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/c-programming-.png" alt="c programming icon" class="icon">
+                                <div>
+                                    <h2>C Programming</h2>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/java.png" alt="java icon" class="icon">
+                                <div>
+                                    <h2>Java</h2>
+                                    <p>Basic</p>
+                                </div>
+                            </article>                       
+                    </div>
+                </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+<!-------------------------------PROJECTS------------------------------>
+    <section id="projects">
+        <p class="profile-text-p1">Check Out My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-container">
+            <div class="about-container">
+                <div class="info-container color-container">
+                    <div class="article-container">
+                        <img src="./images/project-1.jpg" alt="Flower Basket" class="project-img"/>
+                    </div>  
+                    <h2 class="skills-sub-title project-title">Flower Basket</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nikhila1612/FlowerBasket'">
+                                Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://nikhila1612.github.io/FlowerBasket/'">
+                                Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="info-container color-container">
+                    <div class="article-container">
+                        <img src="./images/project-2.jpg" alt="Project 1" class="project-img"/>
+                    </div>  
+                    <h2 class="skills-sub-title project-title">Expense & Budget Tracker</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nikhila1612/Expense-Budget-Tracker'">
+                                Github
+                        </button>
+                       
+                    </div>
+                </div>
+                <div class="info-container color-container">
+                    <div class="article-container">
+                        <img src="./images/project-3.jpg" alt="Project 1" class="project-img"/>
+                    </div>  
+                    <h2 class="skills-sub-title project-title">To Do List</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nikhila1612/Beaver-To-do-list'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://nikhila1612.github.io/Beaver-To-do-list/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>                  
+    </section>
+<!-------------------------------CONTACT------------------------------->
+    <section id="contact">
+        <p class="profile-text-p1 color-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-top-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="email icon" class="icon email-icon contact-icon"/>
+                <p><a class="doc" href="mailto:nikhilamanoj2000@gmail.com">nikhilamanoj2000@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+                <p><a class="doc" href="https://www.linkedin.com/in/nikhila-m-a166ab214/">LinkedIn</a></p>
+            </div>
+        </div>
+        <img src="./images/top-arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#home'"/>  
+    </section>
+<!-------------------------------FOOTER-------------------------------->
+    <footer>    
+        <p>Copyright &#169; 2024 Nikhila M. All Rights Reserved.</p>
+        <div class="social-container social-icons">
+            <img src="./images/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/nikhila-m-a166ab214/'"/>
+            <img src="./images/github.png" alt="linkedin" class="icon" onclick="location.href= 'https://github.com/nikhila1612'"/>
+            <img src="./images/instagram.png" alt="linkedin" class="icon" onclick="location.href='https://www.instagram.com/nikhila1612/'"/>
+            <img src="./images/twitterx.png" alt="linkedin" class="icon" onclick="location.href='https://twitter.com/NikhilaM1612'"/>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
