@@ -27,6 +27,7 @@ a, .btn{
     transition: all 300s ease;
 }
 #home{
+    padding-top: 0;
     margin: 0;
 }
 /* NAVBAR */
@@ -318,7 +319,12 @@ section{
     gap:2rem;
     margin-bottom:2rem;
 }
-
+.about-title{
+    background: #6C0000;
+    background: linear-gradient(to right, #ff4747 0%,rgb(239, 63, 63) 50%, #f92a2a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .arrow{
     position:absolute;
     right:-7rem;
@@ -371,7 +377,10 @@ section{
 }
 
 .skills-sub-title{
-    color: rgb(0, 0, 0);
+    background: #6C0000;
+    background: linear-gradient(to right, #ff4747 0%,rgb(239, 63, 63) 50%, #f92a2a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight:100;
     font-size: 1.7rem;
     margin-bottom:2rem;
@@ -417,8 +426,8 @@ article .icon{
 
 .project-img{
     border-radius: 0.5rem;
-    width:290px;
-    height:200px;
+    width:300px;
+    height:230px;
 }
 
 .project-btn{
@@ -469,7 +478,11 @@ article .icon{
 
 .contact-icon{
     cursor:default;
-    height: 3rem;
+    height: 3rem;  
+}
+
+.contact-doc{
+    color:#c01010;
 }
 
 .email-icon{
